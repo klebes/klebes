@@ -1,4 +1,4 @@
-### Oiii eu sou a Klebes Dos Santos KDS, criador de conteúdo de programação!
+### Oii eu sou  Klebes Dos Santos KDS, criador de conteúdo de programação!
 <div align="center">
   <a href="https://github.com/klebes">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Klebes&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
