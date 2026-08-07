@@ -17,7 +17,7 @@ jobs:
     steps:
 
     # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
     # Repositorio que será utilizado para gerar os arquivos.
       - uses: Platane/snk@master
@@ -29,7 +29,13 @@ jobs:
 
       - run: git status
 
-      # Para as atualizações.
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Update snake game" || echo "Nada para commitar"
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
